@@ -1,0 +1,20 @@
+# /robots.txt file for http://www.lse.com
+# mail webmaster@lse.com for constructive criticism
+
+User-agent: webcrawler
+Disallow:
+Disallow: /piper_mail
+Disallow: /mailman
+
+User-agent: lycra
+Disallow: /
+Disallow: /piper_mail
+Disallow: /mailman
+
+User-agent: *
+Disallow: /tmp
+Disallow: /logs
+Disallow: /piper_mail
+Disallow: /mailman
+
+

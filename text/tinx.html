@@ -1,0 +1,152 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (X11; U; Linux 2.2.5-15 i686) [Netscape]">
+   <meta name="Author" content="David Lucas">
+   <meta name="Description" content="This is a site for limited access to LSE information.">
+   <meta name="Keywords" content="LSE,XML,Java,CORBA,EDI,EAI,TinX,Translator,Transform,XSLT">
+   <meta name="Classification" content="Software Product,Software Consulting">
+   <title>Products from Lucas Software Engineering, Inc.</title>
+  <link rel="SHORTCUT ICON" href="../favicon.ico">
+  <link href="../common.css" rel="stylesheet" type="text/css">
+</head>
+<body class="common" nosave>
+<center>
+  <h1> <font color="#FF6600">TinX</font></h1>
+</center>
+
+<center>
+  <table width="75%" border="2">
+    <tr> 
+      <td height="506">
+<p><strong>Q: What is TinX?</strong></p>
+        <p><strong>A:</strong> <strong>TinX stands for TinX is not XSLT</strong> 
+          in the sense that GNU 's not Unix. I was inspired by XML like structures 
+          being processed over the wire using tools that flattened out structures 
+          and inflated them back. In 1997 I was introducted to an XML like structure 
+          used to transfer banking information from customer to business processing 
+          center and back. The tools that existed then were not mature. We built 
+          specialized tools, but there were limited generic tools for processing 
+          these documents. Enter TinX.</p>
+        <p>TinX is a transformation engine for XML Documents from <a href="http://www.lse.com">Lucas 
+          Software Engineering, Inc</a>.. The current release focuses on mapping 
+          XML to XML and has the ability to map to Java class and object methods 
+          in order to call logic compiled inside of Java classes. It also includes 
+          support for calling JavaScript functions and SQL.</p>
+        <p>The idea behind TinX is that XSLT is great for web pages and various 
+          other translations, and document generation from templates, but is it 
+          right for everything? What about server side dynamic content with XML? 
+          Perhaps the need for TinX is best summed up with: &quot;If the only 
+          tool you have is a hammer, everything begins to look like a nail&quot;.</p>
+        <p>TinX's basic product is designed around XML document processing. This 
+          design allows for stream based processing using very fast SAX event 
+          handlers. The TinX map is geared toward developers with easy tasks to 
+          move the equivalent of XML tree structures values into the appropriate 
+          Java calls and/or XML responses.</p>
+        <p>Eventually TinX will be capable of String, Delimited Text, and XML 
+          input and output options as well as SQL calls directly mapped to an 
+          XML Document Request and Response.messages.<br>
+          <br>
+        </p></td>
+    </tr>
+    <tr> 
+      <td><p><strong>Q: Why another transformation tool?</strong></p>
+        <p><strong>A:</strong> As mentioned in What is TinX?, you may be satisfied 
+          with using your own in-house tools, various open source projects, or 
+          XSLT to solve your problems, but TinX is focused on XML document processing. 
+          The goal for TinX was to make enterprise integration easier for developers 
+          using XML documents to pass multiple requests like in the OFX and IFX 
+          standards.<br>
+          <br>
+          This will also help in multiple channel integration and the enterprise 
+          view of the customer. TinX is about Business To Business (B2B) processing. 
+          And a close eye is given to the &quot;batch&quot; processing current 
+          institutions use in combining multiple system of record information. 
+          Eventually there will be more tools that come out that build upon the 
+          engine's language like syntax and help speed business document processing 
+          to production.<br>
+          <br>
+        </p></td>
+    </tr>
+    <tr> 
+      <td><p><strong>Q: Why did you decide to use XSD Schema instead of DTD?</strong></p>
+        <p><strong>A:</strong> DTDs are an earlier description of how an XML file 
+          may be defined. It lacks some of the more descriptive attributes about 
+          elements and entities and can help in establishing data formats. The 
+          industry is already moving in that direction and it makes sense to support 
+          it first. The current syntax of TinX can be found in the <a href="http://www.lse.com/tinx/1.0/xml/tinx.xsd">tinx.xsd</a> 
+          file.<br>
+          <br>
+        </p>
+        </td>
+    </tr>
+    <tr> 
+      <td height="487"> 
+        <p><strong>Q: What is the product structure to TinX? Is it free?</strong></p>
+        <p><strong>A: </strong>TinX is a commercial product and comes in three 
+          flavors: Personal, Standard, and Enterprise. The cost varies based on 
+          the edition and volume. These licenses are Node-Locked to a particular 
+          machine. </p>
+        <p>The <strong>Personal Edition</strong> will only allow one thread to 
+          handle all the transformations. This will be slower than the Standard 
+          Edition, but will give developers an opportunity to try TinX out. The 
+          Personal will require annual registration. Special Academic Licenses 
+          are available of this version.</p>
+        <p>The <strong>Standard Edition</strong> will be Node-Locked and allow 
+          multiple users to use the engine. This will be limited to 4 concurrent 
+          threads. This will be for the small shops and low number of system users 
+          in a XML document processing environment. </p>
+        <p>The <strong>Enterprise Edition</strong> is for the large business, 
+          corporation, or government agency that has systems configured with multiple 
+          CPUs and hundreds to thousands of users. This edition allows for the 
+          configuration of threads based on the performance characteristics of 
+          the client. This is a Node-Locked license but can be purchased in sub-net 
+          configuration (Class C restriction). In the sub-net license, the product's 
+          license will enable the TinX engine to run up to 253 instances of TinX 
+          on the same sub-net. This is what we term Sub-Net Locked.</p>
+        <p>Annual Support is available. For price and support terms, please contact 
+          <a href="mailto:sales@lse.com">sales@lse.com</a><br>
+          <br>
+        </p>
+        </td>
+    </tr>
+    <tr>
+      <td><p><strong>Q: What are the systems requirements?</strong></p>
+        <p><strong>A:</strong> TinX is a 100% Java Solution that depends on J2SE. 
+          It does require the Security API as well as support for JDBC and JAXP. 
+          It has currently been tested with Sun JDK 1.4.1. It should work with 
+          Sun JDK 1.4.2 and up on platforms supporting that JVM. It has also worked 
+          with IBM JDK 1.4.0 and JRockit 8.1. Currently tested platforms include: 
+          Linux and Windows.</p>
+        <p>TinX is dependant on <a href="http://www.dom4j.org">DOM4J (http://www.dom4j.org)</a> 
+          and <a href="http://jaxen.sourceforge.net">Jaxen (http://jaxen.sourceforge.net)</a>. 
+          There is built in support for JavaScript <a href="http://www.mozilla.org/rhino">(Rhino 
+          http://www.mozilla.org/rhino)</a> as a scripting language. TinX requires 
+          a XML SAX Parser and has been tested with <a href="http://piccolo.sourceforge.net">Piccolo 
+          SAX Parser (http://piccolo.sourceforge.net)</a> (some bugs, see Piccolo 
+          web site on attribute truncation), <a href="http://xml.apache.org/crimson">Crimson 
+          (http://xml.apache.org/crimson)</a>, and <a href="http://xml.apache.org/xerces2-j">Xerces 
+          2 (http://xml.apache.org/xerces2-j)</a>.<br>
+          <br>
+          DOM4J, Jaxen, Crimson and JavaScript (Rhino from Mozilla.org) binaries 
+          have been bundled with the TinX jar file for simplicity.<br>
+          <br>
+        </p>
+        </td>
+    </tr>
+    <tr> 
+      <td><p><strong>Q: Where do I get TinX at?</strong></p>
+        <p><strong>A:</strong> Current download instructions can be found <a href="http://www.lse.com/tinx/release/1.0/install.html">here</a>. 
+          There are three separate ways to install. Windows .exe, Unix .bin, and 
+          Generic Jar install files. Pick the one that is right for you. Enjoy! 
+          :-)<br>
+          <br>
+        </p>
+        </td>
+    </tr>
+  </table>
+  <p>&nbsp; 
+</center>
+</body>
+</html>
